@@ -1,11 +1,14 @@
 describe('Login', () => {
   beforeEach(()=>{
       cy.visit('http://localhost:4000')
+      cy.screenshot('após-visitar-pagina')
   })
-  it('Login com dados válidos devem permitir entrada no sistema', () => {
+  it.only('Login com dados válidos devem permitir entrada no sistema', () => {
     cy.get('#username').click().type('julio.lima')
     cy.get('#senha').click().type('123456')
+     cy.screenshot('após-preencher-dados-validos')
     cy.get('#login-section > .btn').click()
+     cy.screenshot('após-clicar-no-botao-entrar')
 
 
     //Assert
