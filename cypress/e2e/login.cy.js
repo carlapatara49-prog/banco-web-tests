@@ -1,6 +1,6 @@
 describe('Login', () => {
   beforeEach(()=>{
-      cy.visit('http://localhost:4000')
+      cy.visit(Cypress.env('URL'))
       cy.screenshot('após-visitar-pagina')
   })
   it('Login com dados válidos devem permitir entrada no sistema', () => {
