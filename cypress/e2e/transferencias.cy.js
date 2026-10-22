@@ -20,7 +20,7 @@ describe ('Transferencias', () =>{
         cy.realizarTransferencias('Maria Oliveira','João da Silva','6000')
         
         //Assert
-        cy.verificarMensagemNoToast('Transferência realizada!')
+        cy.verificarMensagemNoToast('Autenticação necessária para transferências acima de R$5.000,00.')
     
     })
  })
