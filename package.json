@@ -4,7 +4,7 @@
   "description": "Testes Automatizados web do Banco",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --env URL=http://localhost:4000",
+    "test": "cypress run",
     "cy:headed":"cypress run --headed",
     "cy:open":"cypress open"
   },
