@@ -4,7 +4,7 @@
   "description": "Testes Automatizados web do Banco",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run ",
+    "test": "cypress run",
     "cy:headed":"cypress run --headed",
     "cy:open":"cypress open"
   },

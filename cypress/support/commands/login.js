@@ -1,4 +1,3 @@
-
 Cypress.Commands.add('fazerLoginComCredenciaisValidas', () => {
     cy.fixture('credenciais').then(credenciais => {
         cy.get('#username').click().type(credenciais.valida.usuario)
